@@ -8,7 +8,9 @@
     "lint": "standard",
     "fixStyle": "standard --fix",
     "devDeploy": "sls deploy --stage dev",
-    "prodDeploy": "sls deploy --stage prod"
+    "prodDeploy": "sls deploy --stage prod",
+    "srcDeploy": "./bin/download-vendor-libs.sh && ./bin/deploy-source-files.sh",
+    "srcDestroy": "bin/delete-source-files.sh && echo \\\"Now you can run 'sls remove' on the stage\\\""
   },
   "author": "Justin L Martin",
   "dependencies": {},
