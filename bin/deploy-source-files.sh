@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-read -p "Environment?" STAGE
+read -p "Environment? " STAGE
 echo "Deploying static assets to ${STAGE}..."
 
 BUCKET_NAME=$(aws \
