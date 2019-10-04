@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "",
+  "scripts": {
+    "test": "echo \"No Tests Yet\" && exit 1",
+    "lint": "standard",
+    "fixStyle": "standard --fix",
+    "devDeploy": "sls deploy --stage dev",
+    "prodDeploy": "sls deploy --stage prod"
+  },
+  "author": "Justin L Martin",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "*"
+  }
+}

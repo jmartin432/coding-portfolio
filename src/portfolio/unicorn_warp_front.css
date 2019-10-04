@@ -1,0 +1,21 @@
+svg {
+    background: lightseagreen;
+    border: 1px solid black;
+}
+
+div #output, div #pred-controls, div #prey-controls, div #save, div #load{
+    width:400px;
+    height: 400px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+div.sliders{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+div #save, div #load{
+    padding: 10px;
+}
+
