@@ -7,9 +7,7 @@
     "test": "echo \"No Tests Yet\" && exit 1",
     "lint": "standard",
     "fixStyle": "standard --fix",
-    "deploy": "./bin/deploy-serverless.sh",
-    "upload": "./bin/deploy-source-files.sh",
-    "sourceDestroy": "bin/delete-source-files.sh && echo \\\"Now you can run 'sls remove' on the stage\\\""
+    "upload": "sh scripts/uploadFiles.sh"
   },
   "author": "Justin L Martin",
   "dependencies": {},

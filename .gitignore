@@ -1,3 +1,6 @@
 /arn.json
 /node_modules/
 /.serverless/
+/env.yml
+/scripts/
+/scripts/

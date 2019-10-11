@@ -13,3 +13,23 @@ Properties:
       AliasTarget:
         DNSName: {"Fn::GetAtt": CDN.DomainName}
         HostedZoneId: Z2FDTNDATAQYW2
+    - Name: "www.${self:custom.rootDomain}"
+      Type: A
+      AliasTarget:
+        DNSName: {"Fn::GetAtt": CDN.DomainName}
+        HostedZoneId: Z2FDTNDATAQYW2
+    - Name: "www.${self:custom.rootDomain}"
+      Type: AAAA
+      AliasTarget:
+        DNSName: {"Fn::GetAtt": CDN.DomainName}
+        HostedZoneId: Z2FDTNDATAQYW2
+    - Name: "${self:custom.rootDomain}"
+      Type: A
+      AliasTarget:
+        DNSName: {"Fn::GetAtt": CDN.DomainName}
+        HostedZoneId: Z2FDTNDATAQYW2
+    - Name: "${self:custom.rootDomain}"
+      Type: AAAA
+      AliasTarget:
+        DNSName: {"Fn::GetAtt": CDN.DomainName}
+        HostedZoneId: Z2FDTNDATAQYW2

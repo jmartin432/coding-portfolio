@@ -6,9 +6,12 @@ custom:
   stage: ${opt:stage, self:provider.stage}
   rootDomain: justinlmartin.com
   devDomains:
-    portfolio-dev.justinlmartin.com
+    - 'portfolio-dev.justinlmartin.com'
   prodDomains:
-    portfolio.justinlmartin.com
+    - 'portfolio.justinlmartin.com'
+    - 'test.justinlmartin.com'
+    - 'www.justinlmartin.com'
+    - 'justinlmartin.com'
 
 provider:
   name: aws
@@ -33,12 +36,11 @@ resources:
       Properties:
         DistributionConfig:
           ViewerCertificate:
-            AcmCertificateArn: ${file(arn.json):certificate}
+            AcmCertificateArn: ${file(env.yml):${self:custom.stage}.sslCert}
             SslSupportMethod: sni-only
           Enabled: true
           HttpVersion: http2
-          Aliases:
-            - ${self:custom.${self:custom.stage}Domains}
+          Aliases: ${self:custom.${self:custom.stage}Domains}
           DefaultRootObject: index.html
           Origins:
             - DomainName: {"Fn::Join": ["", [{Ref: WebSite}, ".", {"Fn::FindInMap": [RegionMap, {Ref: "AWS::Region"}, websiteendpoint]}]]}
@@ -61,7 +63,7 @@ resources:
 
 package:
   exclude:
-    - bin/**
+    - scripts/**
     - src/**
     - resources/**
     - package.json
