@@ -55,6 +55,10 @@ img.social{
     font-size: 25px;
 }
 
+div.section_details{
+    padding: 0px 0px 0px 25px;
+}
+
 div.section{
     border: 1px solid black;
     border-radius: 5px;
