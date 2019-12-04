@@ -1,3 +1,7 @@
+:root {
+  --font-name: 'Fjalla One', sans-serif;
+}
+
 body{
     background-color: plum;
     margin: 0px 10px 0px 10px;
@@ -31,7 +35,6 @@ a{
     color: #3c0f77;
 }
 
-
 div#wrapper{
     /*margin-top: 70px;*/
 }
@@ -53,6 +56,10 @@ img.social{
     height: 50px;
     font-family: Verdana;
     font-size: 25px;
+}
+
+.job_bullets{
+    font-family: var(--font-name);
 }
 
 div.section_details{
