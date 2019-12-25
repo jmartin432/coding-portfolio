@@ -58,8 +58,18 @@ img.social{
     font-size: 25px;
 }
 
+.job_title{
+    margin-bottom: 5px;
+}
+
+.job_location{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .job_bullets{
     font-family: var(--font-name);
+    margin-top: 5px
 }
 
 div.section_details{
