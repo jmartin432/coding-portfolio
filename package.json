@@ -7,7 +7,7 @@
     "test": "echo \"No Tests Yet\" && exit 1",
     "lint": "standard",
     "fixStyle": "standard --fix",
-    "uploadFiles": "sh scripts/uploadFilesToOld.sh"
+    "upload": "sh scripts/uploadFiles.sh"
   },
   "author": "Justin L Martin",
   "dependencies": {},
