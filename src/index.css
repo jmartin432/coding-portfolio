@@ -43,7 +43,7 @@ body{
     background-color: gray;
     box-shadow: dimgrey 10px 10px 10px;
     border: 1px solid black;
-    filter: url(#wavy);
+    filter: url(#nav-wavy);
 }
 
 nav{
