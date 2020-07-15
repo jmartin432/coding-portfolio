@@ -14,12 +14,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="modal-container">
+        <div class="modal" id="results-modal">
+            <h1 id="modal-header"></h1>
+            <p id="modal-text">Sound</p>
+            <button id="yes-audio-button">Yes</button>
+            <button id="no-audio-button">No</button>
+        </div>
+    </div>
     <div class="nav-container">
         <div class="nav-filter-box">
             <nav>
-                <a class="nav-link b4" href="#portfolio">Portfolio</a>
-                <a class="nav-link b2" href="#resume">Resume</a>
-                <a class="nav-link b1" href="#about">About</a>
+                <a class="nav-link" id="nav-b1" href="#portfolio">Portfolio</a>
+                <a class="nav-link" id="nav-b2" href="#resume">Resume</a>
+                <a class="nav-link" id="nav-b3" href="#about">About</a>
         <!--        <a class="nav-link b3" href="#projects">Projects</a>-->
             </nav>
         </div>
@@ -328,6 +336,9 @@
 <!--            </div>-->
 <!--        </div>-->
     </div>
+    <audio id="audio1" src="audio/baleines1.mp3"></audio>
+    <audio id="audio2" src="audio/baleines2.mp3"></audio>
+    <audio id="audio3" src="audio/baleines3.mp3"></audio>
     <svg>
         <filter id="wavy">
             <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="4">
