@@ -3,7 +3,7 @@ version: 0.1
 phases:
   build:
     commands:
-      - echo No Commands Yet
+      - echo Just moving files from one bucket to another
 
 artifacts:
   files:
