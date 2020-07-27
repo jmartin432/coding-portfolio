@@ -274,51 +274,51 @@ a.social{
 }
 
 a.mail-icon{
-    background-image: url("images/mailIcon.png");
+    background-image: url("../images/mailIcon.png");
 }
 
 a.mail-icon:hover{
-    background-image: url("images/instagramIcon.png");
+    background-image: url("../images/instagramIcon.png");
 }
 
 a.instagram-icon{
-    background-image: url("images/instagramIcon.png");
+    background-image: url("../images/instagramIcon.png");
 }
 
 a.instagram-icon:hover{
-    background-image: url("images/linkedinIcon.png");
+    background-image: url("../images/linkedinIcon.png");
 }
 
 a.linkedin-icon{
-    background-image: url("images/linkedinIcon.png");
+    background-image: url("../images/linkedinIcon.png");
 }
 
 a.linkedin-icon:hover{
-    background-image: url("images/soundcloudIcon.png");
+    background-image: url("../images/soundcloudIcon.png");
 }
 
 a.soundcloud-icon{
-    background-image: url("images/soundcloudIcon.png");
+    background-image: url("../images/soundcloudIcon.png");
 }
 
 a.soundcloud-icon:hover{
-    background-image: url("images/mailIcon.png");
+    background-image: url("../images/mailIcon.png");
 }
 
 a.github-icon{
-    background-image: url("images/githubIcon.png");
+    background-image: url("../images/githubIcon.png");
 }
 
 a.github-icon:hover{
-    background-image: url("images/codepenIcon.png");
+    background-image: url("../images/codepenIcon.png");
 }
 
 a.codepen-icon{
-    background-image: url("images/codepenIcon.png");
+    background-image: url("../images/codepenIcon.png");
 }
 
 a.codepen-icon:hover{
-    background-image: url("images/githubIcon.png");
+    background-image: url("../images/githubIcon.png");
 }
 
 svg{

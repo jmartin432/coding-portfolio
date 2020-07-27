@@ -3,11 +3,12 @@ version: 0.1
 phases:
   build:
     commands:
-      - echo Just moving files from one bucket to another
-
+      - npm install
+      - npm run webpack
 artifacts:
   files:
     - src/index.*
     - src/images/*
     - src/audio/*
     - src/portfolio/*
+    - src/dist/bundle.js
