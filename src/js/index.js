@@ -12,15 +12,13 @@ function changeFont () {
   console.log(fontFamily)
 
   const jobBullets = document.querySelectorAll('.job_bullets')
-  console.log(jobBullets)
   for (let x = 0; x < jobBullets.length; x++) {
-    console.log(x)
     jobBullets[x].style.setProperty('--font-name', fontFamily)
   }
 }
 
 function loadFileToBuffer (buffer, url) {
-  let request = new XMLHttpRequest()
+  const request = new XMLHttpRequest()
   request.open('GET', url, true)
   request.responseType = 'arraybuffer'
 
@@ -28,8 +26,6 @@ function loadFileToBuffer (buffer, url) {
   request.onload = function () {
     audioContext.decodeAudioData(request.response, function (b) {
       buffer.buffer = b
-      console.log(buffer.buffer)
-      console.log(audioBuffer1.buffer)
     }, function (e) {
       console.log('Error decoding audio data from source:', e.err)
     })
@@ -74,7 +70,6 @@ window.onload = (event) => {
   noAudioButton.addEventListener('click', function () {
     modalContainer.style.display = 'none'
     audio = false
-    console.log(audio)
   })
   yesAudioButton.addEventListener('click', function () {
     modalContainer.style.display = 'none'
