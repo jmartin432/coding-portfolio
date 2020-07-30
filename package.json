@@ -7,13 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch",
-    "ws": "ws -d src/"
+    "ws": "ws -d src/",
+    "dev-deploy": "aws lambda invoke --function-name static-sites-pipeline-deploy-lambda --invocation-type Event --cli-binary-format raw-in-base64-out --payload '{ \"app-name\": \"portfolio\", \"environment\": \"dev\" }'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jmartin432/portfolio.git"
   },
-  "author": "Justin L. Martin (info@justinlmartin.com",
+  "author": "Justin L. Martin (info@justinlmartin.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jmartin432/portfolio/issues"
